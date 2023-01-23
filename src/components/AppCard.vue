@@ -35,10 +35,24 @@ export default {
 
         <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
-            <p class="card-text"></p>
-        </div>
 
+
+            <h4>Tipi di tecnologie utilizzate </h4>
+            <ul>
+                <li v-if="project.type_id" v-for="project in projects">
+                    {{ project.type_id.name }}
+                </li>
+                <li v-else=""> Nessuno Tipo Selezionato</li>
+            </ul>
+
+
+            <p class="card-text">{{ project.content }}</p>
+        </div>
     </div>
+
+
+
+
 
 
 </template>
