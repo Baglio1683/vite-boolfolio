@@ -3,7 +3,6 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 
-
 export default {
   name: 'App',
   components: {
@@ -17,8 +16,11 @@ export default {
 <template>
 
 
-  <AppHeader />
-  <AppMain />
+  <AppHeader></AppHeader>
+
+  <router-link :to="{ name: 'about' }">link a router about </router-link>
+
+
 
 </template>
 

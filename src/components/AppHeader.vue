@@ -13,7 +13,8 @@ export default {
     <header>
         <div class="container">
             <div class="d-flex justify-content-center">
-                <h1>PROGETTI</h1>
+                <router-view :to="{ name: 'home' }">
+                </router-view>
             </div>
         </div>
     </header>

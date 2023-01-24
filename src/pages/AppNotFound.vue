@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: 'AppAbout'
+    name: 'AppNotFound'
 }
 
 </script>
@@ -9,7 +9,7 @@ export default {
 <template>
     <section>
         <h1>
-            Sono La Pagina About
+            Errore 404
         </h1>
     </section>
 

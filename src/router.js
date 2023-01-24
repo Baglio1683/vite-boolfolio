@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import AppHome from './pages/AppHome'; 
-import AppAbout from './pages/AppAbout';
+import AppHome from './pages/AppHome.vue'; 
+import AppAbout from './pages/AppAbout.vue';
+import AppNotFound from "./pages/AppNotFound.vue";
 
 
 const router = createRouter({
@@ -21,7 +22,7 @@ routes: [
 
      { path: "/:pathMatch(.*)*",
       name: "not-found",
-      component: NotFound,
+      component: AppNotFound,
     },
 ]
 }); 
